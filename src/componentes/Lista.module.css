@@ -1,10 +1,16 @@
-.container{
+/* Estilo principal do container */
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 20px; /* Espaçamento entre os cards */
     font-family: "Kanit", sans-serif;
-    background-color: rgba(222, 218, 221, 0.768);
-    width: 100%; 
-    padding: 2vw 2vw 2vw 5vw;
+    background-color: #1a1d29; /* Fundo similar ao tema da Disney+ */
+    color: #ffffff; /* Texto claro */
+    padding: 2vw;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra para destacar o container */
 }
+
+
+

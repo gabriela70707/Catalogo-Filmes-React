@@ -1,0 +1,87 @@
+/* Container principal do perfil */
+.perfilContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1d29; /* Fundo estilo Disney+ */
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: auto;
+}
+
+/* Cabeçalho do perfil */
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1rem;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.header p {
+    color: #00aaff;
+}
+
+/* Favoritos */
+.favorites {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.favorites h3 {
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 0.5rem;
+}
+
+.favorites ul {
+    list-style: none;
+    padding: 0;
+}
+
+.favorites li {
+    margin: 0.5rem 0;
+    background-color: #242736;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+/* Configurações */
+.settings {
+    text-align: left;
+    width: 100%;
+}
+
+.settings h3 {
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 0.5rem;
+}
+
+.btn {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #005f99;
+}

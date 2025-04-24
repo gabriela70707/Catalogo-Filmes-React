@@ -1,12 +1,15 @@
-// Componente Card corrigido
 import estilos from './Card.module.css';
 
-export function Card({ movie, onOpenModal }) {
+export function Card({ item, onOpenModal }) {
     return (
-        <div className={estilos.container}>
-            <h3>{movie.title}</h3>
-            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} onClick={() => onOpenModal(movie)} />
-            <p>{movie.overview}</p>
+        <div className={estilos.card}>
+            <h3>{item.title || item.name}</h3> {/* 'name' é usado para séries */}
+            <img 
+                src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`} 
+                onClick={() => onOpenModal(item)} 
+                alt={item.title || item.name} 
+            />
+            <p>{item.overview}</p>
         </div>
     );
 }
