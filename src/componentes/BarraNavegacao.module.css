@@ -1,0 +1,34 @@
+.container{
+    background-color: #141414;
+    padding: 80px;
+    color:aliceblue ;
+
+}
+
+.container ul{
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    gap: 65px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+
+li{
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+li:hover{
+    background-color: rgb(180, 25, 105);
+    border-radius: 1.2vh;
+    padding: 0.4vh;
+    transition: 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}

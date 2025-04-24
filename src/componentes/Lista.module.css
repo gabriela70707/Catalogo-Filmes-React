@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    background-color: rgba(222, 218, 221, 0.768);
+    width: 100%; 
+    padding: 2vw 2vw 2vw 5vw;
+}
