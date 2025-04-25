@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background-color: #141414;
+    padding: 10px;
+    color: white;
+    height: 150px;
+    padding: 1vh;
+}
+
+h1{
+    font-family: "Kanit", sans-serif;
+    font-size: 5vh;
+    color: rgb(180, 25, 105);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    font-family: "Kanit", sans-serif;
+}

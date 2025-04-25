@@ -3,20 +3,20 @@ import { Inicial } from "../paginas/inicial";
 import { Serie } from "../paginas/serie";
 import { Perfil } from "../paginas/perfil";
 import { ListaGenerica } from "../componentes/ListaGenerica"; // Importando o componente genérico
+import { Navigate } from "react-router-dom";
+
 
 export function Rotas() {
     return (
         <Routes>
-            <Route path="/" element={<Inicial />}>
-                {/* Exibe filmes populares */}
+            <Route path="/" element={<Perfil />} />
+            <Route path="/filmes" element={<Inicial />}>
                 <Route index element={<ListaGenerica apiEndpoint="/movie/popular" mediaType="Filmes" />} />
-                
-                {/* Exibe séries populares */}
                 <Route path="serie" element={<ListaGenerica apiEndpoint="/tv/popular" mediaType="Séries" />} />
-
-                {/* Perfil */}
-                <Route path="perfil" element={<Perfil />} />
             </Route>
+
+            {/* Redirecionar para `/` caso nenhuma rota seja encontrada */}
+            <Route path="*" element={<Navigate to="/" />} />
         </Routes>
     );
 }
