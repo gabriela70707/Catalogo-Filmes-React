@@ -5,7 +5,7 @@ import { Footer } from "../componentes/Footer";
 
 export const Perfil = () => {
     const navigate = useNavigate();
-    const profiles = ["Alice", "Bob", "Charlie", "Daisy"];
+    const profiles = ["Joyce", "João", "Nico", "Ge"];
 
     const handleProfileClick = () => {
         navigate("/filmes"); // Redireciona para a página de filmes
@@ -21,10 +21,7 @@ export const Perfil = () => {
                         className="profile-card"
                         onClick={() => handleProfileClick(profile)}
                     >
-                        <img
-                            src={`/images/${profile.toLowerCase()}.jpg`}
-                            alt={`Foto do perfil de ${profile}`}
-                        />
+                        <img src={`./src/assets/${profile.toLowerCase()}.jpg`} alt={`Foto do perfil de ${profile}`}/>
                         <h2>{profile}</h2>
                     </div>
                 ))}

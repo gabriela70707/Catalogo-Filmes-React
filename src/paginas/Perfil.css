@@ -1,21 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1{
+  padding: 2vh;
+}
+
+h2{
+  font-size: 3vh;
+}
+
 .profile-container {
+    display: grid;
     text-align: center;
-    padding: 20px;
-  }
+    min-height: 100vh;
+  }                                                                                          
   
   .profile-grid {
     display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 70vh;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
+    flex-grow: 1; /*Para poder empurrar o footer para baixo*/
   }
   
   .profile-card {
+    display: grid;
+    justify-items: center;
+    justify-items: center;
+    gap: 3vh;
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.2s;
+    width: 20vw;
   }
   
   .profile-card:hover {
@@ -23,9 +50,8 @@
   }
   
   img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
   }
-  
